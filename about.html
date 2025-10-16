@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About Happy Paws Care</title>
+  <meta name='description' content='Learn about Happy Paws Care — our story, values, and the people behind the care.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@300;400;600&display=swap' rel='stylesheet'>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            primary: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            body: ['Open Sans', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class='font-body text-gray-900'>
+  <!-- Navigation -->
+  <header class='bg-[#3C2415] text-white'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16'>
+      <div class='flex items-center'>
+        <a href='index.html' class='text-2xl font-bold font-primary'>Happy Paws Care</a>
+      </div>
+      <div class='hidden md:block'>
+        <div class='ml-10 flex items-baseline space-x-4'>
+          <a href='index.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Home</a>
+          <a href='about.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>About</a>
+          <a href='contact.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class='relative min-h-screen bg-cover bg-center' style='background-image: url(https://images.unsplash.com/photo-1526336024174-e58f5e3a8a7b?auto=format&fit=crop&w=1400&q=60);'>
+    <div class='absolute inset-0 bg-black opacity-40'></div>
+    <div class='relative z-10 max-w-4xl mx-auto px-4 py-40 text-center text-white'>
+      <h1 class='text-4xl md:text-6xl font-extrabold mb-4 font-primary'>About Happy Paws Care</h1>
+      <p class='text-lg md:text-2xl mb-6 font-body'>We’re dog lovers dedicated to safe, compassionate care with a personal touch.</p>
+    </div>
+  </section>
+
+  <main class='py-16'>
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='font-primary text-3xl md:text-4xl mb-4'>Our Story</h2>
+      <p class='text-body text-gray-800 leading-relaxed'>Happy Paws Care began as a small family operation motivated by a passion for dogs. We built a team of trained caregivers who prioritize safety, enrichment, and individualized attention for every dog we serve.</p>
+    </section>
+
+    <section class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+      <h2 class='font-primary text-3xl md:text-4xl mb-6'>Meet the Team</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div class='bg-white rounded-lg shadow p-6 text-center'>
+          <img src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60' alt='Mara, Lead Caregiver' class='mx-auto w-24 h-24 rounded-full object-cover mb-4'>
+          <h3 class='font-primary text-xl mb-1'>Mara Chen</h3>
+          <p class='text-sm text-gray-600'>Lead Caregiver</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6 text-center'>
+          <img src='https://images.unsplash.com/photo-1524504388940-b1c1865f8a5a?auto=format&fit=crop&w=400&q=60' alt='Diego, Dog Care Specialist' class='mx-auto w-24 h-24 rounded-full object-cover mb-4'>
+          <h3 class='font-primary text-xl mb-1'>Diego Rivera</h3>
+          <p class='text-sm text-gray-600'>Dog Care Specialist</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6 text-center'>
+          <img src='https://images.unsplash.com/photo-1525255497633-e1bdc9c1a9f9?auto=format&fit=crop&w=400&q=60' alt='Lina, Grooming Technician' class='mx-auto w-24 h-24 rounded-full object-cover mb-4'>
+          <h3 class='font-primary text-xl mb-1'>Lina Patel</h3>
+          <p class='text-sm text-gray-600'>Grooming Technician</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h3 class='text-2xl font-bold mb-4 font-primary'>Happy Paws Care</h3>
+          <p class='text-gray-300 mb-4'>Compassionate dog care with a personal touch.</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Hours</h4>
+          <p class='text-sm text-gray-300'>Mon-Fri: 8:00 AM – 6:00 PM</p>
+          <p class='text-sm text-gray-300'>Sat: 9:00 AM – 4:00 PM</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Location</h4>
+          <p class='text-sm text-gray-300'>123 Tail Wag Lane, Barksville</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-[#D2B48C]'>Home</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-[#D2B48C]'>About</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-[#D2B48C]'>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class='border-gray-700 opacity-50 my-8'>
+      <div class='text-center text-sm text-gray-400'>© 2025 Happy Paws Care. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
