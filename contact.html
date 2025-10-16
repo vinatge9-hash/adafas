@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Contact Happy Paws Care</title>
+  <meta name='description' content='Get in touch with Happy Paws Care for bookings or general inquiries.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@300;400;600&display=swap' rel='stylesheet'>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            primary: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            body: ['Open Sans', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class='font-body text-gray-900'>
+  <!-- Navigation -->
+  <header class='bg-[#3C2415] text-white'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16'>
+      <div class='flex items-center'>
+        <a href='index.html' class='text-2xl font-bold font-primary'>Happy Paws Care</a>
+      </div>
+      <div class='hidden md:block'>
+        <div class='ml-10 flex items-baseline space-x-4'>
+          <a href='index.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Home</a>
+          <a href='about.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>About</a>
+          <a href='contact.html' class='px-3 py-2 rounded-md text-sm font-medium hover:bg-[#4b2b1f]'>Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class='relative min-h-screen bg-cover bg-center' style='background-image: url(https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&fit=crop&w=1400&q=60);'>
+    <div class='absolute inset-0 bg-black opacity-40'></div>
+    <div class='relative z-10 max-w-4xl mx-auto px-4 py-40 text-center text-white'>
+      <h1 class='text-4xl md:text-6xl font-extrabold mb-4 font-primary'>Contact Happy Paws Care</h1>
+      <p class='text-lg md:text-2xl mb-6 font-body'>Have questions or want to book a visit for your pup? Send us a message and we’ll respond promptly.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <main class='py-16'>
+    <section class='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <form id='contact-form' class='bg-white rounded-lg shadow p-6' action='#' method='post'>
+        <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <div>
+            <label class='block text-sm font-medium text-gray-700 mb-1' for='name'>Your Name</label>
+            <input id='name' name='name' type='text' required class='w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-yellow-400'>
+          </div>
+          <div>
+            <label class='block text-sm font-medium text-gray-700 mb-1' for='email'>Email</label>
+            <input id='email' name='email' type='email' required class='w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-yellow-400'>
+          </div>
+        </div>
+        <div class='mt-4'>
+          <label class='block text-sm font-medium text-gray-700 mb-1' for='dog-name'>Dog's Name</label>
+          <input id='dog-name' name='dog-name' type='text' required class='w-full border border-gray-300 rounded-md px-3 py-2'>
+        </div>
+        <div class='mt-4'>
+          <label class='block text-sm font-medium text-gray-700 mb-1' for='dog-breed'>Dog Breed</label>
+          <input id='dog-breed' name='dog-breed' type='text' class='w-full border border-gray-300 rounded-md px-3 py-2'>
+        </div>
+        <div class='mt-4'>
+          <label class='block text-sm font-medium text-gray-700 mb-1' for='service'>Service</label>
+          <select id='service' name='service' class='w-full border border-gray-300 rounded-md px-3 py-2'>
+            <option>Daily Walk</option>
+            <option>Daycare</option>
+            <option>Grooming</option>
+            <option>Boarding</option>
+          </select>
+        </div>
+        <div class='mt-4'>
+          <label class='block text-sm font-medium text-gray-700 mb-1' for='message'>Message</label>
+          <textarea id='message' name='message' rows='4' required class='w-full border border-gray-300 rounded-md px-3 py-2 resize-none'></textarea>
+        </div>
+        <div class='mt-4 flex items-center'>
+          <button id='submit-btn' type='submit' class='bg-[#D2B48C] hover:bg-[#C89E62] text-black font-semibold py-2 px-6 rounded-full'>Send Message</button>
+          <span id='form-status' class='ml-4 text-sm text-green-600 hidden'>Message sent! We will be in touch shortly.</span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-[#3C2415] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h3 class='text-2xl font-bold mb-4 font-primary'>Happy Paws Care</h3>
+          <p class='text-gray-300 mb-4'>Compassionate dog care with a personal touch.</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Contact</h4>
+          <p class='text-sm text-gray-300'>Phone: (555) 012-3456</p>
+          <p class='text-sm text-gray-300'>Email: hello@happy-paws.example</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Hours</h4>
+          <p class='text-sm text-gray-300'>Mon-Fri: 8:00 AM - 6:00 PM</p>
+          <p class='text-sm text-gray-300'>Sat: 9:00 AM - 4:00 PM</p>
+        </div>
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-4 text-[#D2B48C]'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-300 hover:text-[#D2B48C]'>Home</a></li>
+            <li><a href='about.html' class='text-gray-300 hover:text-[#D2B48C]'>About</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-[#D2B48C]'>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class='border-gray-700 opacity-50 my-8'>
+      <div class='text-center text-sm text-gray-400'>© 2025 Happy Paws Care. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const btn = document.getElementById('submit-btn');
+          const status = document.getElementById('form-status');
+          btn.disabled = true;
+          btn.textContent = 'Sending...';
+          setTimeout(() => {
+            btn.textContent = 'Send Message';
+            btn.disabled = false;
+            status.classList.remove('hidden');
+            status.textContent = 'Message sent! We will be in touch shortly.';
+          }, 1200);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
